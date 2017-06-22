@@ -1,0 +1,44 @@
+{
+  "name": "@otinsoft/vue-toolkit",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otinsoft/vue-toolkit.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "Cretu Eusebiu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/otinsoft/vue-toolkit/issues"
+  },
+  "homepage": "https://github.com/otinsoft/vue-toolkit#readme",
+  "peerDependencies": {
+    "date-fns": "*"
+  },
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "babel-register": "^6.23.0",
+    "browser-env": "^2.0.21",
+    "eslint": "^3.13.0",
+    "eslint-config-vue": "^2.0.1",
+    "eslint-plugin-vue": "^1.0.0"
+  },
+  "ava": {
+    "require": [
+      "babel-register",
+      "./test/helpers/setup-browser-env.js"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ]
+  }
+}

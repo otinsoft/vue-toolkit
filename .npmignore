@@ -1,0 +1,5 @@
+test/
+yarn.lock
+.eslintrc
+.travis.yml
+.editorconfig

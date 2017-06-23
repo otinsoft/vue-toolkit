@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import autosize from 'autosize'
 
-Vue.directive('autosize', () => {
+Vue.directive('autosize', {
   bind (el) {
     autosize(el)
   },

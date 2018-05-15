@@ -12,9 +12,11 @@
     </slot>
 
     <slot :data="data" name="content">
-      <v-table ref="table" :data="data" v-bind="tableProps" @order="handleOrder" @filter="handleFilter">
-        <slot/>
-      </v-table>
+      <div class="table-responsive">
+        <v-table ref="table" :data="data" v-bind="tableProps" @order="handleOrder" @filter="handleFilter">
+          <slot/>
+        </v-table>
+      </div>
     </slot>
 
     <pagination v-if="pagination" :pagination="pagination" @change="onPageChanged"/>

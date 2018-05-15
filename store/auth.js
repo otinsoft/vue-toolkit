@@ -52,7 +52,7 @@ export const actions = {
 
   async fetchUser ({ commit }) {
     try {
-      const { data } = await axios.get('/user')
+      const { data } = await axios.get('/users/current')
 
       commit('FETCH_USER_SUCCESS', data)
     } catch (e) {

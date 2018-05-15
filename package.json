@@ -1,6 +1,6 @@
 {
   "name": "@otinsoft/vue-toolkit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Common utilities for Vue projects.",
   "repository": {
     "type": "git",
@@ -15,12 +15,18 @@
     "url": "https://github.com/otinsoft/vue-toolkit/issues"
   },
   "homepage": "https://github.com/otinsoft/vue-toolkit#readme",
+  "scripts": {
+    "lint": "vue-cli-service lint ./"
+  },
   "peerDependencies": {
-    "date-fns": "*"
+    "axios": "*",
+    "date-fns": "*",
+    "js-cookie": "*",
+    "lodash-es": "*"
   },
   "devDependencies": {
-    "eslint": "^4.0.0",
-    "eslint-config-vue": "^2.0.2",
-    "eslint-plugin-vue": "^2.1.0"
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.7",
+    "@vue/cli-service": "^3.0.0-beta.7",
+    "@vue/eslint-config-standard": "^3.0.0-beta.7"
   }
 }

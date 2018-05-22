@@ -1,18 +1,18 @@
 <template>
-  <div class="custom-control custom-checkbox">
+  <label class="custom-control custom-checkbox mb-0">
     <input
+      :id="id"
       :name="name"
-      :checked="internalValue"
-      :id="id || name"
       type="checkbox"
+      :checked="internalValue"
       class="custom-control-input"
-	  v-indeterminate="indeterminate"
+      v-indeterminate="indeterminate"
       @click="handleClick">
-    <label :for="id || name" class="custom-control-label font-weight-normal">
+    <span class="custom-control-label font-weight-normal">
       <slot/>
-    </label>
+    </span>
     <slot name="feedback"/>
-  </div>
+  </label>
 </template>
 
 <script>

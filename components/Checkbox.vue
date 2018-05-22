@@ -6,6 +6,7 @@
       :id="id || name"
       type="checkbox"
       class="custom-control-input"
+	  v-indeterminate="indeterminate"
       @click="handleClick">
     <label :for="id || name" class="custom-control-label font-weight-normal">
       <slot/>

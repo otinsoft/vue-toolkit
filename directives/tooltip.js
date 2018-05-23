@@ -1,6 +1,8 @@
 import $ from 'jquery'
 
-export default {
+const Tooltip = {
+  name: 'tooltip',
+
   bind (el) {
     $(el).tooltip()
   },
@@ -11,5 +13,11 @@ export default {
 
   unbind (el) {
     $(el).tooltip('dispose')
+  },
+
+  install (Vue) {
+    Vue.directive(Tooltip.name, Tooltip)
   }
 }
+
+export default Tooltip

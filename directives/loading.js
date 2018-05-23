@@ -4,6 +4,8 @@ import loadingVue from '../components/Loading'
 const LoadingCtor = Vue.extend(loadingVue)
 
 const Loading = {
+  name: 'loading',
+
   bind (el, binding) {
     el.loading = new LoadingCtor({
       el: document.createElement('div')
@@ -22,6 +24,10 @@ const Loading = {
       el.loading.$el.parentNode.removeChild(el.loading.$el)) {
       toggleLoading(el, { value: false })
     }
+  },
+
+  install (Vue) {
+    Vue.directive(Loading.name, Loading)
   }
 }
 

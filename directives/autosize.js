@@ -1,6 +1,8 @@
 import autosize from 'autosize'
 
-export default {
+const Autosize = {
+  name: 'autosize',
+
   bind (el) {
     autosize(el)
   },
@@ -11,5 +13,11 @@ export default {
 
   unbind (el) {
     autosize.destroy(el)
+  },
+
+  install (Vue) {
+    Vue.directive(Autosize.name, Autosize)
   }
 }
+
+export default Autosize

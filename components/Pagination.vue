@@ -10,7 +10,7 @@
       <li :class="{ disabled: currentPage == 1 }" class="page-item">
         <a class="page-link" title="Previous"
            aria-label="Previous" href="#" @click="handleClick($event, prevPage || 1)">
-          <span aria-hidden="true">&laquo;</span>
+          <fa :icon="['far', 'chevron-left']"/>
           <span class="sr-only">Previous</span>
         </a>
       </li>
@@ -43,7 +43,7 @@
       <li :class="{ disabled: currentPage === lastPage }" class="page-item">
         <a class="page-link" title="Next"
            aria-label="Next" href="#" @click="handleClick($event, nextPage || lastPage)">
-          <span aria-hidden="true">&raquo;</span>
+          <fa :icon="['far', 'chevron-right']"/>
           <span class="sr-only">Next</span>
         </a>
       </li>

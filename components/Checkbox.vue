@@ -27,9 +27,9 @@ export default {
     indeterminate: { type: Boolean, default: false }
   },
 
-  data: () => ({
-    internalValue: false
-  }),
+  data () {
+    return { internalValue: this.value }
+  },
 
   watch: {
     value (val) {
@@ -48,8 +48,6 @@ export default {
   },
 
   created () {
-    this.internalValue = this.value
-
     if ('checked' in this.$options.propsData) {
       this.internalValue = this.checked
     }

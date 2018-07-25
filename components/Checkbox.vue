@@ -50,7 +50,7 @@ export default {
   name: 'Checkbox',
 
   props: {
-    value: { type: [String, Number], default: undefined },
+    value: { type: Boolean, default: false },
     label: { type: String, default: undefined },
     indeterminate: { type: Boolean, default: false },
     disabled: { type: Boolean, default: false },

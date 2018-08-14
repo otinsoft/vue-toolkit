@@ -36,9 +36,9 @@
       @focus="focus = true"
       @blur="focus = false">
 
-    <span v-if="$slots.default || label" class="custom-control-label">
+    <span class="custom-control-label">
       <slot/>
-      <template v-if="!$slots.default">{{ label }}</template>
+      <template v-if="!$slots.default && label">{{ label }}</template>
     </span>
 
     <slot name="feedback"/>

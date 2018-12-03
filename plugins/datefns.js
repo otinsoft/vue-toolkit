@@ -4,8 +4,8 @@ import en from 'date-fns/esm/locale/en-US'
 const DateFns = {
   locale: 'en',
   locales: { en },
-  dateFormat: 'MMM DD, YYYY',
-  dateTimeFormat: 'MMM DD, YYYY, hh:mm A'
+  dateFormat: 'MMM dd, yyyy',
+  dateTimeFormat: 'MMM dd, yyyy, hh:mm z'
 }
 
 /**
